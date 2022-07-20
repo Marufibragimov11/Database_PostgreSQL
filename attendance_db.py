@@ -11,7 +11,7 @@ try:
     # # csv file to sql
     with con.cursor() as cur:
         sql2 = '''COPY attendance(employee_id, day, month, year, time)
-        FROM 'D:\python\Company\Database_PostgreSQL\CLEAN_DATA.csv'
+        FROM 'D:\python\Company\Database_PostgreSQL\data\CLEAN_DATA.csv'
         DELIMITER ','
         CSV HEADER;'''
 
